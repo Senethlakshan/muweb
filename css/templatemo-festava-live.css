@@ -46,6 +46,7 @@ https://templatemo.com/tm-583-festava-live
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
+   overflow-x: hidden;
 }
 
 
@@ -280,6 +281,29 @@ strong {
   color: var(--primary-color);
 }
 
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .btn.custom-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-header p {
+      font-size: 12px;
+  }
+
+  .navbar-toggler {
+      margin-left: auto;
+      margin-right: 15px;
+  }
+}
+
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -331,7 +355,7 @@ strong {
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
-.video-wrap {
+ .video-wrap {
   z-index: -100;
 }
 
@@ -340,9 +364,12 @@ strong {
   top: 0;
   left: 0;
   object-fit: cover;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
+
+
+
 
 
 /*---------------------------------------
